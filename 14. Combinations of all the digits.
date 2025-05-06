@@ -1,0 +1,13 @@
+import itertools
+a=int(input("digit1 (0-9): "))
+b=int(input("digit2 (0-9): "))
+c=int(input("digit3 (0-9): "))
+
+if(0 <=a <= 9) and (0 <= b <= 9) and (0<=c<=9):
+	combinations = itertools.permutations([a,b,c])
+	for combo in combinations:
+		print(''.join(map(str,combo)))
+else:
+
+
+    print("Invalid")
